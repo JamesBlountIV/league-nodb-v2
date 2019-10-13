@@ -1,0 +1,92 @@
+.champion-buttons {
+    border: solid honeydew 2px;
+    background: rgb(26, 26, 26, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45vh;
+    width: 50vw;
+}
+
+.top-5 {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    height: 18vh;
+    margin-top: 5vh;
+}
+
+.bot-5 {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    width: 40vw;
+    height: 18vh;
+}
+
+.champ-square {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 15vh;
+    align-items: center;
+}
+
+p {
+    color: whitesmoke;
+    display: flex;
+    align-self: center;
+    height: 5vh;
+    margin: 0;
+}
+.tryn-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/5/5f/TryndamereSquare.png?version=212a124ef6af23869dc00e752aed1063);
+    height: 10vh;
+    width: 6vw;
+}
+.mundo-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/b/b0/DrMundoSquare.png?version=1e491bfb3c337f4da5d5b906cfab31d1);
+    height: 10vh;
+    width: 6vw;
+}
+.voli-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/f/f9/VolibearSquare.png?version=e8586ccf6c763509c4c511044d8282f8);
+    height: 10vh;
+    width: 6vw;
+}
+.graves-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/2/26/GravesSquare.png?version=dd63dc5a6cbd902bcc38d98c0e9be579);
+    height: 10vh;
+    width: 6vw;
+}
+.ekko-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/e/ef/EkkoSquare.png?version=16e6b703ccbee9084e986ab77b9ea3d1);
+    height: 10vh;
+    width: 6vw;
+}
+.kha-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/1/14/Kha%27ZixSquare.png?version=79aedc7d47218e82e8e4cea2f8ffc9a9);
+    height: 10vh;
+    width: 6vw;
+}
+.nunu-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/b/be/Nunu_%26_WillumpSquare.png?version=88a4d5fe3b3c699340d571f1321a6b7f);
+    height: 10vh;
+    width: 6vw;
+}
+.hec-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/4/4c/HecarimSquare.png?version=1ae89d21ab0a74b857522fbe4eec3dd4);
+    height: 10vh;
+    width: 6vw;
+}
+.udyr-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/d/d1/UdyrSquare.png?version=1bb2771a28ba2e5409b26ddbbb0d67a7);
+    height: 10vh;
+    width: 6vw;
+}
+.vi-btn {
+    content: url(https://gamepedia.cursecdn.com/lolesports_gamepedia_en/c/c0/ViSquare.png?version=b050ba90c8e20a0d54bc17cf957466a3);
+    height: 10vh;
+    width: 6vw;
+}
