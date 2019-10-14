@@ -1,9 +1,10 @@
 .Comment-container {
-    width: 26vw;
-    height: 5vh;
+    border-radius: 5px;
+    width: 25vw;
+    height: 4vh;
     padding: 0 10px;
     background: rgba(182, 172, 36, 0.3);
-    border-radius: 2px;
+    border-radius: 10px;
     display: flex;
     margin-bottom: 5px;
     align-items: center;
@@ -26,20 +27,27 @@
 }
 
 .Comment-change {
-    display: flex;
     position: absolute;
-    top: 5px;
+    top: 3px;
     right: 3vw;
-    font-size: 13px;
+    font-size: 1em;
     cursor: pointer;
 }
 
 .Comment-remove {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 13px;
+    top: 3px;
+    right: 3px;
+    font-size: 1em;
     cursor: pointer;
+}
+
+.edit-buttons {
+    border-radius: 10px;
+}
+
+.edit-buttons:hover {
+    background: #55acee;
 }
 
 .edit-delete {

@@ -8,7 +8,8 @@ export default class ComSection extends Component {
     super();
     this.state = {
         comments: [],
-        text: ''
+        text: '',
+        editText: ""
     };
 
     this.handleChange = this.handleChange.bind( this );
@@ -28,7 +29,11 @@ export default class ComSection extends Component {
 
   handleChange(e) {
     this.setState({ text: e.target.value });
-    console.log(this.handleChange);
+    console.log(e.target.value);
+  }
+
+  handleEditChange =(e) => {
+      this.setState({editText: e.target.value});
   }
 
   createComment(e) {
@@ -43,16 +48,15 @@ export default class ComSection extends Component {
   }
 
   editComment( id, text ) {
-    console.log( "editComment:", id, text ); 
-    axios.put(`"/api/comments"/${id}`, {text} ).then( response => {
+      axios.put(`/api/comments/${id}`, {text} ).then( response => {
       this.setState({ comments: response.data });
-    });
+    }).catch(error => { console.log(error);});
   }
 
   removeComment(id) {
-    axios.delete(`"/api/comments"/${id}` ).then( response => {
+    axios.delete(`/api/comments/${id}` ).then( response => {
       this.setState({ comments: response.data });
-    });
+    }).catch(error => { console.log(error);});
   }
 
   render() {
@@ -62,8 +66,8 @@ export default class ComSection extends Component {
           <div id="ComSec-container3">
             {
               this.state.comments.map( comment => (
-                <Comment id={ comment.id} key={ comment.id } text={ comment.text }
-                edit={ this.editComment } remove={ this.removeComment } />
+                <Comment id={ comment.id} key={ comment.id } text={ comment.text } handleEditChange={this.handleEditChange} editText={this.state.editText} handleChange={this.handleChange}
+                edit={ () => this.editComment(comment.id, this.state.editText) } remove={ this.removeComment } />
               ))
             }
           </div>

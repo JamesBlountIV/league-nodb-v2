@@ -19,7 +19,7 @@
     width: 97%;
     background-color: rgb(26, 26, 26, 0.7);
     box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
-    border-radius: 3px;
+    border-radius: 30px;
   }
   
   #ComSec-container3 {
@@ -48,6 +48,7 @@
   }
   
   input {
+    border-radius: 50px;
     background: rgb(26, 26, 26, 0.7);
     width: 98.5%;
     border: none;
