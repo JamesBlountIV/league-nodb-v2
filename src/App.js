@@ -1,15 +1,13 @@
 import React from 'react';
 import Champion from './components/Champion';
-import './components/Champion.css'
-// import data from './data';
-// import axios from 'axios';
+import ComSection from './components/CommentSection/ComSection';
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
         
-        <Champion/>
+        <Champion><ComSection/></Champion>
       </div>
     )
   }

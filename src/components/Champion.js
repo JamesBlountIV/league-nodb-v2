@@ -1,20 +1,23 @@
 import React, {Component} from 'react';
-import data from '../data';
+import myData from '../myData';
 import '../components/Champion.css';
 import '../components/ChampionImg.css';
+import ComSection from './CommentSection/ComSection';
+import Header from './Header';
+import Footer from './Footer';
 
 export default class Champion extends Component {
     constructor() {
         super();
         this.state = {
-            prop: data,
+            prop: myData,
             id: 0,
         }
     }
 
     tryndamere = () => {
         this.setState({
-            id: this.state.id !== 1 ? this.state.id = 1 : this.state.id = 1
+            id: this.state.id = 1
         })
     }
     mundo = () => {
@@ -66,8 +69,9 @@ export default class Champion extends Component {
     render() {
         return (
             <main id= "body">
-                <div className= "page-container"> 
-                    <header className= "header"><p className="header-text">Top 10 Junglers for patch 9.18</p></header>
+                <div className= "page-container">
+                    <ComSection />
+                    <Header /> 
                     <section className="page-center">
 
 
@@ -153,9 +157,7 @@ export default class Champion extends Component {
                             </section>
                         </section>
                     </section>
-                    <footer className="footer">
-                        <h1 className= "footer-text">The Jungler's Guide</h1>
-                    </footer>
+                    <Footer />
                 </div>
             </main>
         )

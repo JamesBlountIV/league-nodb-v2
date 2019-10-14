@@ -13,7 +13,8 @@
 }
 
 .header {
-    border: solid honeydew 2px;
+    border: solid #bda928 2px;
+    border-radius: 50%;
     background: rgb(26, 26, 26, 0.7);
     display: flex;
     justify-content: center;
@@ -21,8 +22,8 @@
     font-size: 2.2em;
     height: 10vh;
     width: 35vw;
-    margin-top: 25vh;
-    margin-left:7.5vw;
+    margin-top: 0vh;
+    margin-left:32.5vw;
 }
 
 .header-text {
@@ -34,10 +35,10 @@
 
 
 .champion-infoDisplay {
-    border: solid honeydew 2px;
+    border: solid #bda928 2px;
+    border-radius: 40%;
     background: rgb(26, 26, 26, 0.7);
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     height: 45vh;
     width: 50vw;
@@ -50,6 +51,7 @@
 }
 
 #stats-container {
+    margin-left: 15vw;
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
@@ -88,8 +90,9 @@
 
 .footer {
     border: solid honeydew 2px;
+    border-radius: 50%;
     background: rgb(26, 26, 26, 0.7);
-    font-size: 2em;
+    font-size: 1.8em;
     color:  #bda928;
     display: flex;
     margin-left: 25vw;

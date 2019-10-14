@@ -1,0 +1,50 @@
+.Comment-container {
+    width: 26vw;
+    height: 5vh;
+    padding: 0 10px;
+    background: rgba(182, 172, 36, 0.3);
+    border-radius: 2px;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgb(68, 67, 67), 0 1px 2px 0 rgb(78, 78, 78, 0.2);
+
+}
+
+.Comment {
+    font-size: 1em;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}
+
+.Comment-typed {
+    position: absolute;
+    bottom: 10px;
+    width: calc(98% + 4px);
+}
+
+.Comment-change {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 3vw;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.Comment-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.edit-delete {
+    height: 2em;
+    width: 5vw;
+    display: flex;
+    
+}

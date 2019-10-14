@@ -1,10 +1,10 @@
-const data = [
+const myData = [
     {
         id: 0,
         name: "Click On Champion To View Here"
     },
     {
-        id: 1,
+        
         name: "Tryndamere",
         winrate: "53.72%",
         combat: "Fighter",
@@ -94,4 +94,4 @@ const data = [
         counter: "Nunu & Willump"
     }
 ];
-export default data;
+export default myData;
